@@ -20,14 +20,14 @@
             $title              = $config["origin"];
 
             $this->instance     = new ExampleSMSTR_API();
-            $this->set_credentials($username,$password);
+            $this->instance->set_credentials($username,$password);
 
             $this->title = $title;
         }
 
         public function change_config($username,$password){
             $this->instance     = new ExampleSMSTR_API();
-            $this->set_credentials($username,$password);
+            $this->instance->set_credentials($username,$password);
 
             return $this;
         }
